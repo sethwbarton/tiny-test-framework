@@ -64,7 +64,7 @@ Install all the needed code quality tools and typescript.
 npm install
 ```
 That should be it! I recommend enabling `run prettier on save` in your IDE if that sort of thing strikes your fancy. 
-There are no tests for the testing framework. That seemed a bit to meta for me. But if you want to add tests, be my guest.
+There are no tests for the testing framework. That seemed a bit too meta for me. But if you want to add tests, be my guest.
 
 Happy hacking!
 
