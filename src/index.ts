@@ -5,12 +5,12 @@ export const describe = function (
   description: string,
   describeBlock: () => void
 ) {
-  console.log('*****' + description + '******')
+  console.log('\x1b[7m================================ ' + description + ' ================================\x1b[0m')
   describeBlock()
 }
 
 export const it = function (description: string, itBlock: () => void) {
-  console.log('>>>>' + description + '<<<<<')
+  console.log('\x1b[1m> ' + description + ' <\x1b[0m')
   beforeEachDecorator()
   itBlock()
   afterEachDecorator()
@@ -18,9 +18,9 @@ export const it = function (description: string, itBlock: () => void) {
 
 export const expect = function (statusCheck: boolean) {
   if (statusCheck) {
-    console.log('Passed')
+    console.log('\x1b[32m Passed \x1b[0m')
   } else {
-    console.log('Failed')
+    console.log('\x1b[31m Failed \x1b[0m')
   }
 }
 

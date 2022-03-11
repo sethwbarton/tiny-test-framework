@@ -1,6 +1,6 @@
 {
   "name": "tiny-test-framework",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny test framework based on Jest. Seriously though, it does the bare minimum. Who needs mocks anyways?",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
